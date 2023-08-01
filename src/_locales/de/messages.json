@@ -1,0 +1,50 @@
+{
+  "extensionName": {
+    "message": "Quick Folder Move"
+  },
+  "extensionDescription": {
+    "message": "Benutze die Tastatur um schnell Nachrichten zu verschieben"
+  },
+  "actionMove": {
+    "message": "Verschieben"
+  },
+  "actionCopy": {
+    "message": "Kopieren"
+  },
+  "actionGoto": {
+    "message": "Gehe zu"
+  },
+  "markAsRead": {
+    "message": "Markiere Nachrichten als gelesen, wenn sie verschoben werden"
+  },
+  "markAsRead.title": {
+    "message": ""
+  },
+  "showFolderPath": {
+    "message": "Zeige vollen Pfad jedes Ordners im Suchfeld an"
+  },
+  "showFolderPath.title": {
+    "message": ""
+  },
+  "preferBrowserAction": {
+    "message": "Bevorzuge die Schaltfläche der globalen Symbolleiste, um die Ordnerliste anzuzeigen"
+  },
+  "preferBrowserAction.title": {
+    "message": ""
+  },
+  "maxRecentFolders": {
+    "message": "Anzahl der zuletzt besuchten Ordner"
+  },
+  "maxRecentFolders.title": {
+    "message": "Ändert die Anzahl zuletzt besuchten Ordner, die angezeigt werden, wenn kein Suchtext eingegeben wurde."
+  },
+  "useLegacyShortcuts": {
+    "message": "Aktivere die Tastenkombinationen der vorherigen Version 1.x"
+  },
+  "useLegacyShortcuts.title": {
+    "message": "Nutze ⇧M als Tastaturkombination zum Verschieben der Nachrichten"
+  },
+  "useLegacyShortcutsDone": {
+    "message": "Es können nun ⇧M ⇧Y und ⇧G verwendet werden. Die Tastenkombinationen können in den Einstellungen angepasst werden."
+  }
+}
