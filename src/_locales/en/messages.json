@@ -26,6 +26,12 @@
   "showFolderPath.title": {
     "message": ""
   },
+  "preferBrowserAction": {
+    "message": "Prefer unified toolbar button when showing folder list"
+  },
+  "preferBrowserAction.title": {
+    "message": ""
+  },
   "maxRecentFolders": {
     "message": "Number of recent folders to show"
   },

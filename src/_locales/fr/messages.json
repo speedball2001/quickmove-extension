@@ -26,6 +26,12 @@
   "showFolderPath.title": {
     "message": ""
   },
+  "preferBrowserAction": {
+    "message": "Préférer le bouton de la barre d'outils unifiée lors de l'affichage de la liste des dossiers"
+  },
+  "preferBrowserAction.title": {
+    "message": ""
+  },
   "maxRecentFolders": {
     "message": "Nombre de dossiers récents"
   },

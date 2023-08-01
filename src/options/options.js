@@ -7,7 +7,8 @@ const DEFAULT_PREFERENCES = {
   markAsRead: true,
   maxRecentFolders: 15,
   showFolderPath: false,
-  useLegacyShortcuts: false
+  useLegacyShortcuts: false,
+  preferBrowserAction: false
 };
 
 async function restore_options() {

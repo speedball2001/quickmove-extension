@@ -42,7 +42,22 @@ browser.runtime.onInstalled.addListener(({ reason, previousVersion }) => {
 browser.commands.onCommand.addListener(async (name) => {
   let mailTab = await browser.mailTabs.getCurrent();
   let displayedMessages = await browser.messageDisplay.getDisplayedMessages(mailTab.id);
-  if (name == "goto" || !mailTab?.messagePaneVisible || displayedMessages.length > 1) {
+
+  let { preferBrowserAction } = await browser.storage.local.get({ preferBrowserAction: false });
+  console.log(preferBrowserAction);
+
+  if(preferBrowserAction) {
+    if (name == "goto") {
+      browser.browserAction.setPopup({ popup: `/popup/popup.html?action=${name}&allowed=move,copy,goto` });
+      browser.browserAction.openPopup();
+      browser.browserAction.setPopup({ popup: "/popup/popup.html?action=move&allowed=move,copy,goto" });
+    } else {
+      browser.browserAction.setPopup({ popup: `/popup/popup.html?action=${name}&allowed=move,copy` });
+      browser.browserAction.openPopup();
+      browser.browserAction.setPopup({ popup: "/popup/popup.html?action=move&allowed=move,copy" });
+    }
+  }
+  else if (name == "goto" || !mailTab?.messagePaneVisible || displayedMessages.length > 1) {
     browser.browserAction.setPopup({ popup: `/popup/popup.html?action=${name}&allowed=move,copy,goto` });
     browser.browserAction.openPopup();
     browser.browserAction.setPopup({ popup: "/popup/popup.html?action=move&allowed=move,copy,goto" });
